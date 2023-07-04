@@ -1,3 +1,8 @@
+/* --text: #070c0d;
+--background: #dfe9ec;
+--primary-button: #3c5d68;
+--secondary-button: #f5f8f9;
+--accent: #324e57; */
 * {
     font-family: 'Fragment Mono', monospace;
     box-sizing: border-box;
@@ -11,25 +16,28 @@ html {
 body {
     margin: 0;
     padding: 0;
-    background-color: white;
+    background-color: #dfe9ec;
 }
-header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/header\ pic.jpg);
-    -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 
+.bg_parallax {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/header\ pic.jpg);
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .navbar {
     /* display: flex; */
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    color: #fff;
+    color: #000000;
   }
   .nav-links a {
-    color: #fff;
+    color: #000000;
   }
   
   /* LOGO */
@@ -116,7 +124,7 @@ header {
     font-weight: 900;
     margin: 0 auto;
 }
-.home-text h5 {
+.home-text h4 {
     margin: 0;
 }
 
