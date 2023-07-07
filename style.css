@@ -252,4 +252,20 @@ display: flex;
     .dropdown li:hover {
       background-color: #4c9e9e;
     }
+
+    .myBio {
+      flex-direction: column;
+    }
+    .bio-img{
+      width: 100%;
+      height: auto;
+      padding: 20px;
+    }
+    .bio-img img {
+      width: 100%;
+    }
+    .bio-txt {
+      width: 100%;
+      padding: 20px;
+    }
   }
