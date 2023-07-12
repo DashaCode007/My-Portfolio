@@ -225,3 +225,7 @@
 .home-text h4 {
     margin: 0;
 }
+
+
+
+https://www.tiktok.com/@itsmejayjl?is_from_webapp=1&sender_device=pc

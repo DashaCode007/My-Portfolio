@@ -169,14 +169,14 @@ display: flex;
 .bio-img{
   width: 600px;
   height: auto;
-  padding: 20px;
 }
 .bio-img img {
+  padding: 4rem 0;
   width: 100%;
 }
 .bio-txt {
   width: 500px;
-  padding: 20px;
+  padding: 8rem 2rem;
 }
 .bio-txt h1 {
   font-size: 3rem;
@@ -187,8 +187,41 @@ display: flex;
   line-height: 1.6;
 }
 
+/* Progress Section */
+
+.progress-bar {
+  background-color: #69bbd6;
+  height: auto;
+}
+.progress {
+  background-color: #3c5d68;
+  height: 14px;
+}
+.bio-txt h5 {
+  margin-top: 16px;
+  color: #333;
+}
 
 
+/* Bio button */
+.bio-btn {
+  margin-top: 2rem;
+  display: flex;
+}
+.bio-btn button {
+    border: none;
+    font-size: 13px;
+    border-radius: 30px;
+    padding: 1rem 2rem;
+    margin-right: 7px;
+    color: #dfe9ec;
+}
+.hire-btn {
+  background-color: #69bbd6;
+}
+.resume-btn {
+  background-color: #3c5d68;
+}
 
 
 
@@ -237,7 +270,7 @@ display: flex;
     }
   
     .hamburger {
-      top: 30px;
+      top: 19px;
       right: 31px;
       position: absolute;
       display: block;
@@ -253,6 +286,18 @@ display: flex;
       background-color: #4c9e9e;
     }
 
+    .logo {
+      font-size: 24px;
+      left: 20px;
+      top: 20px;
+    }
+    .home-text h1 {
+      font-size: 30px
+    }
+    .home-text h5 {
+      font-size: 14px
+    }
+
     .myBio {
       flex-direction: column;
     }
@@ -262,10 +307,17 @@ display: flex;
       padding: 20px;
     }
     .bio-img img {
+      padding-bottom: 0;
       width: 100%;
     }
     .bio-txt {
       width: 100%;
       padding: 20px;
     }
+
+    .bio-btn button {
+      font-size: 10px;
+      border-radius: 30px;
+      padding: 1rem 2rem;
+  }
   }
