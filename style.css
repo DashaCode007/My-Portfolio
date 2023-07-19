@@ -226,9 +226,31 @@ display: flex;
 
 
 
+/* Portfolio Section */
+.portfolio-container {
+  background-color: #dfe9ec;
+}
+
+.middle-navList {
+  display: flex;
+  justify-content: center;
+}
+
+.middle-navList li {
+  padding: 20px;
+  transition: .3s all ease;
+}
 
 
+.photo-content img {
+  height: 300px;
+}
 
+.photo-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
 
