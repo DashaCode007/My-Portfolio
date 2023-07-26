@@ -5,12 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>My Portfolio</title>
 </head>
 <body>
   <div class="wrapper">
     <header class="parallax">
+      <div class="nav-container">
       <nav class="navbar">
         <!-- LOGO -->
         <div class="logo" data-aos="flip-right">@D4SHA</div>
@@ -48,6 +52,7 @@
           </div>
         </ul>
       </nav>
+    </div>
       <img src="img/header pic.jpg" class="background">
       
     <div class="home h1" data-aos="fade-down" data-aos-duration="2000">
@@ -59,10 +64,10 @@
 
   <div class="body-container">
   <div class="myBio p-xl-5">
-    <div class="bio-img" data-aos="fade-up">
+    <div class="bio-img">
       <img class="img-fluid" src="https://his.edu.vn/wp-content/uploads/2023/05/Dasha-Taran-Instagram-Model-Biography-Age-and-Boyfriend.jpg" alt="">
     </div>
-      <div class="bio-txt" data-aos="fade-up" data-aos-duration="2000">
+      <div class="bio-txt">
        <h1>My Bio</h1>
        <p>Welcome to my portfolio website! I'm Jay-ar, a passionate Software Engineer and Web Developer, specializing in creating impactful applications, websites, and video editing projects. With a strong focus on collaboration, creativity, and attention to detail, I consistently deliver exceptional results that exceed expectations. 
       </br></p>
@@ -128,19 +133,32 @@
         <li class="nav-item p-2" role="presentation">
           <button class="nav-link text-info" id="pills-photo-tab" data-bs-toggle="pill" data-bs-target="#pills-photo" type="button" role="tab" aria-controls="pills-photo" aria-selected="false">Photography</button>
         </li>
+        <li class="nav-item p-2" role="presentation">
+          <button class="nav-link text-info" id="pills-thumb-tab" data-bs-toggle="pill" data-bs-target="#pills-thumb" type="button" role="tab" aria-controls="pills-thumb" aria-selected="false">Photo Thumbnails</button>
+        </li>
       </ul>
       <div class="tab-content" id="pills-tabContent">
-        <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab">This is all</div>
-        <div class="tab-pane fade" id="pills-web" role="tabpanel" aria-labelledby="pills-web-tab">This is Web</div>
-        <div class="tab-pane fade" id="pills-app" role="tabpanel" aria-labelledby="pills-app-tab">...</div>
-        <div class="tab-pane fade photo-content" id="pills-photo" role="tabpanel" aria-labelledby="pills-photo-tab">
+        <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab">
           <img src="https://images.pexels.com/photos/17539223/pexels-photo-17539223/free-photo-of-vintage-peugeot-bicycle.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
           <img src="https://images.pexels.com/photos/17427998/pexels-photo-17427998/free-photo-of-flowers-and-mountain-behind.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
           <img src="https://images.pexels.com/photos/16314582/pexels-photo-16314582/free-photo-of-city-people-art-street.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
         </div>
+        <div class="tab-pane fade" id="pills-web" role="tabpanel" aria-labelledby="pills-web-tab"><img src="./img/linestyle.png" alt=""></div>
+        <div class="tab-pane fade" id="pills-app" role="tabpanel" aria-labelledby="pills-app-tab"><img src="https://images.pexels.com/photos/16314582/pexels-photo-16314582/free-photo-of-city-people-art-street.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt=""></div>
+        <div class="tab-pane fade photo-content" id="pills-photo" role="tabpanel" aria-labelledby="pills-photo-tab" data-aos="zoom-in">
+          <img src="https://images.pexels.com/photos/17539223/pexels-photo-17539223/free-photo-of-vintage-peugeot-bicycle.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+          <img src="https://images.pexels.com/photos/17427998/pexels-photo-17427998/free-photo-of-flowers-and-mountain-behind.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+          <img src="https://images.pexels.com/photos/16314582/pexels-photo-16314582/free-photo-of-city-people-art-street.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+        </div>
+        <div class="tab-pane fade" id="pills-thumb" role="tabpanel" aria-labelledby="pills-thumb-tab"><img src="https://images.pexels.com/photos/17427998/pexels-photo-17427998/free-photo-of-flowers-and-mountain-behind.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></div>
       </div>
     </div>
     </div>
+
+    <div class="service-container">
+      <h1 class="text-center">Services</h1>
+    </div>
+
 <div id="fr"><h1>
   hello Under Constructions pa po ito HAAHHAHA
 </h1></div>

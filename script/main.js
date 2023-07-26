@@ -17,3 +17,4 @@ document.addEventListener("DOMContentLoaded", function(){
   document.addEventListener("mousemove", e => {
     AOS.refresh();
 });
+
