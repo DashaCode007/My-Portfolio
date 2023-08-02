@@ -56,6 +56,7 @@ section {
   position: absolute;
   width: 100%;
   padding: 15px auto;
+  z-index: 99;
 }
 .navbar {
     max-width: 915px;
@@ -76,6 +77,9 @@ section {
     left: 0;
     font-size: 20px;
     margin-bottom: 20px;
+  }
+  .side-btn {
+    display: none;
   }
   
   /* NAVBAR MENU */
@@ -134,13 +138,6 @@ section {
   } 
   
   /* HAMBURGER MENU */
-  .hamburger {
-    position: absolute;
-    right: 0;
-    display: none;
-    font-size: 24px;
-    user-select: none;
-  }
   .home {
     display: flex;
     justify-content: center;
@@ -257,7 +254,6 @@ margin: auto;
 
 
 .tab-pane img {
-  height: 300px;
   padding: 20px;
 }
 
@@ -282,6 +278,9 @@ margin: auto;
   
   /* APPLYING MEDIA QUERIES */
   @media (max-width: 768px) {
+    .check {
+      border: 1px solid red;
+    }
    .menu {
       display:none;
       position: absolute;
@@ -303,15 +302,14 @@ margin: auto;
       margin-top: 12px;
     }
   
-    input[type=checkbox]:checked ~ .menu {
+    .side-btn {
       display: block;
+      right: 15px;
+      top: 20px;
+      color: #69bbd6;
+      background-color: #3c5d68;
+      width: 37px;
     }
-  
-    .hamburger {
-      position: absolute;
-      display: block;
-    }
-  
     .dropdown {
       left: 50%;
       top: 30px;

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
@@ -23,8 +24,9 @@
         <ul class="nav-links">
     
           <!-- USING CHECKBOX HACK -->
-          <input type="checkbox" id="checkbox_toggle" />
-          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+          <button class="side-btn float-end position-absolute" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" role="button">☰
+            <i class="bi bi-arrow-right-square-fill fs-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"></i>
+        </button>
     
           <!-- NAVIGATION MENUS -->
           <div class="menu">
@@ -40,8 +42,6 @@
                 <li><a href="/">Dropdown 1 </a></li>
                 <li><a href="/">Dropdown 2</a></li>
                 <li><a href="/">Dropdown 2</a></li>
-                <li><a href="/">Dropdown 3</a></li>
-                <li><a href="/">Dropdown 4</a></li>
               </ul>
     
             </li>
@@ -67,6 +67,50 @@
     <div class="bio-img">
       <img class="img-fluid" src="https://his.edu.vn/wp-content/uploads/2023/05/Dasha-Taran-Instagram-Model-Biography-Age-and-Boyfriend.jpg" alt="">
     </div>
+
+    <!-- sidebar -->
+    <div class="offcanvas offcanvas-start w-50" tabindex="-1" id="offcanvas" data-bs-keyboard="false" data-bs-backdrop="false">
+      <div class="offcanvas-header">
+          <h6 class="offcanvas-title d-sm-block" id="offcanvas">Menu</h6>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body px-0">
+          <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-start" id="menu">
+              <li class="nav-item">
+                  <a href="#" class="nav-link text-truncate">
+                      <i class="fs-5 bi-house"></i><span class="ms-1 d-sm-inline">Home</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="#submenu1" data-bs-toggle="collapse" class="nav-link text-truncate">
+                      <i class="fs-5 bi-speedometer2"></i><span class="ms-1 d-sm-inline">About</span> </a>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="nav-link dropdown-toggle text-truncate" id="dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="ms-1 d-sm-inline">Services</span>
+                </a>
+                <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdown">
+                    <li><a class="dropdown-item" href="#">New project...</a></li>
+                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+          
+                </ul>
+            </li>
+              <li>
+                  <a href="#" class="nav-link text-truncate">
+                      <i class="fs-5 bi-table"></i><span class="ms-1 d-sm-inline">Portfolio</span></a>
+              </li>
+              <li>
+                  <a href="#" class="nav-link text-truncate">
+                      <i class="fs-5 bi-grid"></i><span class="ms-1 d-sm-inline">Resume</span></a>
+              </li>
+              <li>
+                  <a href="#" class="nav-link text-truncate">
+                      <i class="fs-5 bi-people"></i><span class="ms-1 d-sm-inline">Contacts</span> </a>
+              </li>
+          </ul>
+      </div>
+  </div>
       <div class="bio-txt">
        <h1>My Bio</h1>
        <p>Welcome to my portfolio website! I'm Jay-ar, a passionate Software Engineer and Web Developer, specializing in creating impactful applications, websites, and video editing projects. With a strong focus on collaboration, creativity, and attention to detail, I consistently deliver exceptional results that exceed expectations. 
@@ -110,7 +154,7 @@
         </div>
         <div class="bio-btn">
           <button class="hire-btn">HIRE ME</button>
-          <button class="resume-btn">DOWNLOAD RESUME</button>
+          <button class="resume-btn" >DOWNLOAD RESUME</button>
         </div>
      </div>   
   </div>
@@ -143,7 +187,7 @@
           <img src="https://images.pexels.com/photos/17427998/pexels-photo-17427998/free-photo-of-flowers-and-mountain-behind.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
           <img src="https://images.pexels.com/photos/16314582/pexels-photo-16314582/free-photo-of-city-people-art-street.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
         </div>
-        <div class="tab-pane fade" id="pills-web" role="tabpanel" aria-labelledby="pills-web-tab"><img src="./img/linestyle.png" alt=""></div>
+        <div class="tab-pane fade" id="pills-web" role="tabpanel" aria-labelledby="pills-web-tab"><img class="img-fluid" src="./img/linestyle.png" alt=""></div>
         <div class="tab-pane fade" id="pills-app" role="tabpanel" aria-labelledby="pills-app-tab"><img src="https://images.pexels.com/photos/16314582/pexels-photo-16314582/free-photo-of-city-people-art-street.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt=""></div>
         <div class="tab-pane fade photo-content" id="pills-photo" role="tabpanel" aria-labelledby="pills-photo-tab" data-aos="zoom-in">
           <img src="https://images.pexels.com/photos/17539223/pexels-photo-17539223/free-photo-of-vintage-peugeot-bicycle.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
@@ -161,7 +205,8 @@
 
 <div id="fr"><h1>
   hello Under Constructions pa po ito HAAHHAHA
-</h1></div>
+</h1>
+</div>
 </div>
 <script src="/script/main.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
