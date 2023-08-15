@@ -231,10 +231,11 @@ margin: auto;
 
 
 /* Portfolio Section */
-.portfolio-container {
+.portfolio-container, .service-container {
   background-color: #dfe9ec;
   max-width: 915px;
   margin: auto;
+  margin-bottom: 100px;
 }
 
 .middle-navList {
@@ -249,24 +250,46 @@ margin: auto;
 
 .tab-content {
   display: flex;
+  justify-content: center;
+}
+.all-img {
+  display: flex;
   justify-content: space-evenly;
 }
-
-
-.tab-pane img {
-  padding: 20px;
-  width: 300px;
-  height: 435px;
+.all-img img {
+  padding: 30px 10px;
+  width: 302px;
+  height: 200px;
 }
-.tab-web img {
-  width: 550px;
-  height: 350px;
-}
-
 .photo-content {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.app-img img {
+  height: 420px;
+  width: 450px;
+  padding: 30px 10px;
+}
+.cert-img img {
+  height: 440px;
+  padding-top: 30px;
+}
+
+/* Services Section */
+.box-container {
+  display: flex;
+  justify-content: center;
+}
+
+.box-container div {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  width: 290px;
+  height: 331px;
 }
 
 
@@ -358,5 +381,11 @@ margin: auto;
       font-size: 10px;
       border-radius: 30px;
       padding: 1rem 2rem;
+  }
+
+  .all-img img {
+    padding: 20px;
+    width: 450px;
+    height: 350px;
   }
   }
