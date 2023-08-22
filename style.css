@@ -75,6 +75,9 @@ section {
   .logo {
     position: absolute;
     left: 0;
+    padding: 5px 10px;
+    border-radius: 8px;
+    background-color: #4c9e9e;
     font-size: 20px;
     margin-bottom: 20px;
   }
@@ -387,5 +390,9 @@ margin: auto;
     padding: 20px;
     width: 450px;
     height: 350px;
+  }
+  .cert-img img {
+    height: auto;
+    padding: 20px;
   }
   }
