@@ -32,22 +32,20 @@
           <div class="menu">
     
             <li><a href="/">Home</a></li>
-            <li><a href="/">About</a></li>
-    
+            <li><a href="#myBio">About</a></li>
+            <li><a href="#myResume">Resume</a></li>
+            <li><a href="#myPortfolio">Portfolio</a></li>
+            
             <li class="services">
-              <a href="/">Services</a>
+              <a href="#">Services</a>
     
               <!-- DROPDOWN MENU -->
               <ul class="dropdown">
-                <li><a href="/">Dropdown 1 </a></li>
-                <li><a href="/">Dropdown 2</a></li>
-                <li><a href="/">Dropdown 2</a></li>
+                <li><a href="#myServices">App Development </a></li>
+                <li><a href="/">Photo Editing</a></li>
+                <li><a href="/">Front-end</a></li>
               </ul>
-    
             </li>
-    
-            <li><a href="#myPortfolio">Portfolio</a></li>
-            <li><a href="#myResume">Resume</a></li>
             <li><a href="#myContact">Contact</a></li>
           </div>
         </ul>
@@ -82,11 +80,11 @@
                   </a>
               </li>
               <li>
-                  <a href="#submenu1" data-bs-toggle="collapse" class="nav-link text-truncate">
+                  <a href="#myBio" data-bs-toggle="collapse" class="nav-link text-truncate">
                       <i class="fs-5 bi-speedometer2"></i><span class="ms-1 d-sm-inline">About</span> </a>
               </li>
               <li class="dropdown">
-                <a href="#" class="nav-link dropdown-toggle text-truncate" id="dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                <a href="#myServices" class="nav-link dropdown-toggle text-truncate" id="dropdown" data-bs-toggle="dropdown" aria-expanded="false">
                   <span class="ms-1 d-sm-inline">Services</span>
                 </a>
                 <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdown">
@@ -101,17 +99,17 @@
                       <i class="fs-5 bi-table"></i><span class="ms-1 d-sm-inline">Portfolio</span></a>
               </li>
               <li>
-                  <a href="#" class="nav-link text-truncate">
+                  <a href="#myResume" class="nav-link text-truncate">
                       <i class="fs-5 bi-grid"></i><span class="ms-1 d-sm-inline">Resume</span></a>
               </li>
               <li>
-                  <a href="#" class="nav-link text-truncate">
+                  <a href="#myContact" class="nav-link text-truncate">
                       <i class="fs-5 bi-people"></i><span class="ms-1 d-sm-inline">Contacts</span> </a>
               </li>
           </ul>
       </div>
   </div>
-      <div class="bio-txt">
+      <div class="bio-txt" id="myBio">
        <h1>My Bio</h1>
        <p>Welcome to my portfolio website! I'm Jay-ar, a passionate Web Developer, specializing in creating impactful applications, websites, and video/photo editing projects. With a strong focus on collaboration, creativity, and attention to detail, I consistently deliver exceptional results that exceed expectations. 
       </br></p>
@@ -192,7 +190,11 @@
           <img class="img-fluid" src="./img/photo3.webp" alt="">
           <img class="img-fluid" src="./img/photo4.webp" alt="">
         </div>
-        <div class="tab-pane fade tab-web" id="pills-web" role="tabpanel" aria-labelledby="pills-web-tab"><img class="img-fluid" src="./img/linestyle.png" alt=""></div>
+        <div class="tab-pane fade tab-web" id="pills-web" role="tabpanel" aria-labelledby="pills-web-tab">
+          <img class="img-fluid" src="./img/linestyle.png" alt="">
+          <img class="img-fluid linemob" src="./img/linestyle mob.png" alt="">
+          <img class="img-fluid linemob" src="./img/linestyle price.png" alt="">
+        </div>
         <div class="tab-pane fade app-img" id="pills-app" role="tabpanel" aria-labelledby="pills-app-tab">
           <img class="img-fluid" src="./img/user management data.png" alt="">
           <img class="img-fluid" src="./img/user mangement form.png" alt="">
@@ -215,17 +217,17 @@
       <h1 class="text-center mb-5">Services</h1>
       <div class="box-container">
         <div>
-          <i><img src="/img/coding.png" alt=""></i>
+          <i><img src="./img/coding.png" alt=""></i>
           <h3 class="mb-4">Development</h3>
           <p>In a dynamic digital world, I turn your ideas into functional app experiences that enhance engagement and drive growth.</p>
         </div>
         <div>
-          <i><img src="/img/image-editing.png" alt=""></i>
+          <i><img src="./img/image-editing.png" alt=""></i>
           <h3 class="mb-4">Photo Editing</h3>
           <p>Enhance images with expert editing. Transform and revive visuals for accuracy and originality. Unleash your images' full potential.</p>
         </div>
         <div>
-          <i><img src="/img/ui-design.png" alt=""></i>
+          <i><img src="./img/ui-design.png" alt=""></i>
           <h3 class="mb-4">Front-end</h3>
           <p>Essential for online engagement, my precise front-end development balances aesthetics and usability, bringing your ideas to vibrant life.
           </p>
@@ -234,11 +236,10 @@
     </div>
     <div class="contact-container" id="myContact">
       <h1 class="text-center mb-5">Contact Me</h1>
+      <div id="fr">
+        <img class="align-self-center" src="./img/contruction.png" alt="">
+      </div>
     </div>
-
-<div id="fr">
-  <img class="flex justify-content-center" src="/img/contruction.png" alt="">
-</div>
 </div>
 <script src="/script/main.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

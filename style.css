@@ -76,10 +76,18 @@ section {
     position: absolute;
     left: 0;
     padding: 5px 10px;
-    border-radius: 8px;
-    background-color: #4c9e9e;
+    background-color: #69bbd6;
     font-size: 20px;
     margin-bottom: 20px;
+    color: #121212;
+    border: solid 2px #121212;
+      box-shadow: 4px 4px #121212;
+      border-radius: 4px;
+  }
+  .logo:hover {
+    cursor: pointer;
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px #121212;
   }
   .side-btn {
     display: none;
@@ -96,7 +104,7 @@ section {
   }
   
   .menu li:hover {
-    background-color: #3c5d68;
+    background-color: #69bbd6;
     border-radius: 5px;
     transition: 0.3s ease;
   }
@@ -126,6 +134,7 @@ section {
   .dropdown li {
     padding: 0.5em 1em;
     width: 8em;
+    font-size: 16px;
     text-align: center;
   }
   
@@ -217,12 +226,18 @@ margin: auto;
   display: flex;
 }
 .bio-btn button {
-    border: none;
     font-size: 13px;
-    border-radius: 30px;
+    border-radius: 20px;
     padding: 1rem 2rem;
     margin-right: 7px;
     color: #dfe9ec;
+    border: solid 2px #121212;
+      box-shadow: 4px 4px #121212;
+      transition: transform 50ms, box-shadow 50ms;
+}
+.bio-btn button:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px #121212;
 }
 .hire-btn {
   background-color: #69bbd6;
@@ -269,6 +284,14 @@ margin: auto;
   justify-content: center;
   align-items: center;
 }
+.tab-web img {
+  width: 500px;
+}
+.tab-web .linemob {
+  padding: 10px;
+  width: 200px;
+  height: 300px;
+}
 .app-img img {
   height: 420px;
   width: 450px;
@@ -290,11 +313,19 @@ margin: auto;
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 20px;
+  padding: 30px 20px;
   width: 290px;
   height: 331px;
 }
 
+/* CONTACT SECTION */
+
+.contact-container {
+  background-color: #3c5d68;
+}
+.contact-container h1 {
+  color: #dfe9ec;
+}
 
 
 
@@ -336,11 +367,22 @@ margin: auto;
   
     .side-btn {
       display: block;
+      font-size: 20px;
+      font-weight: 900;
       right: 15px;
       top: 20px;
-      color: #69bbd6;
-      background-color: #3c5d68;
-      width: 37px;
+      font-weight: 900;
+      color: #121212;
+      background-color: #69bbd6;
+      padding: 3px 28px;
+      border: solid 2px #121212;
+      box-shadow: 4px 4px #121212;
+      border-radius: 4px;
+      transition: transform 50ms, box-shadow 50ms;
+    }
+    .side-btn:hover {
+      transform: translate(2px, 2px);
+      box-shadow: 2px 2px #121212;
     }
     .dropdown {
       left: 50%;
@@ -353,7 +395,7 @@ margin: auto;
     }
 
     .logo {
-      font-size: 24px;
+      font-size: 20px;
       left: 20px;
       top: 20px;
     }
@@ -378,6 +420,7 @@ margin: auto;
     .bio-txt {
       width: 100%;
       padding: 20px;
+      padding-bottom: 100px;
     }
 
     .bio-btn button {
@@ -386,6 +429,15 @@ margin: auto;
       padding: 1rem 2rem;
   }
 
+  .tab-web img {
+    padding: 20px;
+  }
+  .tab-web .linemob {
+    padding: 20px;
+    margin: auto;
+    width: 345px;
+    height: 470px;
+  }
   .all-img img {
     padding: 20px;
     width: 450px;
@@ -394,5 +446,17 @@ margin: auto;
   .cert-img img {
     height: auto;
     padding: 20px;
+  }
+  .app-img {
+    padding: 20px;
+  }
+
+  /* service section */
+  .box-container {
+    flex-wrap: wrap;
+  }
+  .box-container div {
+    width: 390px;
+    height: 300px;
   }
   }
