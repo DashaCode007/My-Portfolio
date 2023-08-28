@@ -357,6 +357,15 @@ transition: transform 1000ms, box-shadow 800ms;
   padding-right: 3px;
   display: inline-block;
 }
+.contact-first h3 {
+  margin: 0;
+}
+.contact-first .social-icon {
+  padding: 0 10px;
+}
+.contact-first .social-icon img {
+  margin-right: 15px;
+}
 .contact-second {
   font-size: 15px ;
   width: 30%;
@@ -505,6 +514,7 @@ transition: transform 1000ms, box-shadow 800ms;
 
   /*! contact section */
   .contact-container {
+    padding: 20px;
     flex-direction: column;
     text-align: center;
     justify-content: center;
