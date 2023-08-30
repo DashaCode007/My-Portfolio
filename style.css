@@ -154,7 +154,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 88vh;
+    height: 74vh;
   }
 
 .home-text {
@@ -172,6 +172,10 @@ section {
 }
 .home-text h5 span {
   color: #69bbd6;
+}
+.test{
+  text-align: center;
+  border: red 2px solid;
 }
 
 /*! Slider section */
@@ -191,8 +195,12 @@ margin: auto;
   height: auto;
 }
 .bio-img .dasha {
-  padding: 4rem 2rem;
+  padding: 1rem 2rem;
   width: 100%;
+  margin: 105px 10px;
+  border: solid 2px #333;
+      box-shadow: 7px 7px #333;
+      transition: transform 50ms, box-shadow 50ms;
 }
 .bio-icon {
   padding: 20px;
@@ -479,8 +487,8 @@ transition: transform 1000ms, box-shadow 800ms;
       padding: 20px;
     }
     .bio-img .dasha {
-      padding-bottom: 0;
       width: 100%;
+      margin: 40px auto;
     }
     .bio-icon h4 {
   text-align: left;
@@ -545,8 +553,5 @@ transition: transform 1000ms, box-shadow 800ms;
   }
   .contact-second ul {
     text-align: left;
-  }
-  .contact-first p {
-   
   }
   }
